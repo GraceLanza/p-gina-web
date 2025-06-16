@@ -1,0 +1,191 @@
+
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f5f1;
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 20px;
+}
+
+/* Encabezado */
+header {
+  background-color: #ff7043;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #ffab91;
+  color: #3e2723;
+}
+
+/* Secciones */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255,112,67,0.15);
+}
+
+section h2 {
+  color: #ff7043;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section h3 {
+  color: #ff7043;
+  margin-top: 25px;
+}
+
+/* Listas */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Imágenes */
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Galería */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.galeria img {
+  width: calc(50% - 15px);
+  max-width: 300px;
+}
+
+/* Video contenedor */
+.video-contenedor {
+  text-align: center;
+}
+
+iframe {
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+/* Testimonios */
+/* Testimonios simplificados */
+#testimonios {
+  background-color: #fdfdfd;
+  padding: 25px 15px;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 6px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#testimonios h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.testimonio {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border-left: 3px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.testimonio blockquote {
+  font-style: normal;
+  color: #555;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.testimonio p {
+  text-align: right;
+  font-weight: 500;
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
+
+
+/* Contacto */
+#contacto p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 8px 0;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #ff7043;
+  color: white;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .galeria img {
+    width: 100%;
+  }
+}
